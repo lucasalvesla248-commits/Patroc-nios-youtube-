@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Patrocinadores YouTube — IRL Pro</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;overflow:hidden}
+body{pointer-events:none}
+#stage{position:fixed;inset:0;width:100%;height:100%;background:transparent}
+#logo{
+  position:absolute !important;
+  left:30px !important;
+  right:auto !important;
+  top:auto !important;
+  bottom:calc(min(265px,34vh) + 45px) !important;
+  width:min(20vw,300px);
+  max-width:24%;
+  height:auto;
+  display:block;
+  opacity:0;
+  transform:translateY(8px) scale(.98);
+  transition:opacity .65s ease,transform .65s ease;
+  pointer-events:none;
+}
+#logo.show{opacity:1;transform:translateY(0) scale(1)}
+</style>
+</head>
+<body>
+<div id="stage">
+  <img id="logo" alt="">
+</div>
+<script>
+const logo=document.getElementById('logo');
+const explorando='explorando_felicidades_todo_branco.png';
+const conecta='conecta_piaui_patrocinador_starlink.png';
+
+const SHOW=8000;       // cada logo
+const BLANK=40000;     // intervalo sem logo
+const CYCLE=SHOW+SHOW+BLANK; // 56s
+
+let current='';
+function setLogo(src, visible){
+  if(visible){
+    if(current!==src){
+      logo.classList.remove('show');
+      setTimeout(()=>{
+        logo.src=src;
+        current=src;
+        logo.classList.add('show');
+      },120);
+    }else logo.classList.add('show');
+  }else{
+    logo.classList.remove('show');
+    current='';
+  }
+}
+function loop(){
+  const t=performance.now()%CYCLE;
+  if(t<SHOW) setLogo(explorando,true);
+  else if(t<SHOW+SHOW) setLogo(conecta,true);
+  else setLogo('',false);
+  requestAnimationFrame(loop);
+}
+loop();
+</script>
+</body>
+</html>
