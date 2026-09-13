@@ -1,0 +1,10 @@
+IRL PRO — POSIÇÃO FINAL
+
+- LOCALIZAÇÃO (cidade + estado): canto superior esquerdo.
+- VELOCIDADE (km/h): logo abaixo da localização, também no canto superior esquerdo.
+- Logo dos patrocinadores: bloco inferior esquerdo, centralizada.
+- Hora + temperatura: abaixo da logo, centralizadas.
+- Localização e velocidade continuam funcionais pelo GPS.
+- Temperatura continua funcional pela localização.
+- Alternância dos patrocinadores mantida.
+- Fundo transparente.
