@@ -1,0 +1,11 @@
+IRL PRO — PATROCINADORES ACIMA DA TELEMETRIA
+
+Posição: alinhado à esquerda e acima da linha de hora/temperatura do HUD
+IRL_YOUTUBE_CHAT_SEM_CHAT.
+
+Sequência:
+Explorando Felicidades (8s) → Conecta Piauí / Patrocinador Star Link (8s)
+→ 40s sem logo → repete.
+
+As imagens e a animação original foram mantidas; foi alterada somente a
+posição do elemento para ficar acima da telemetria inferior esquerda.
