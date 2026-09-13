@@ -1,8 +1,0 @@
-IRL PRO — VERSÃO FINAL
-
-- Localização em branco.
-- Velocidade/km em branco.
-- Ícone GPS minimalista branco e discreto antes da localização.
-- Localização e velocidade continuam funcionais pelo GPS.
-- Hora + temperatura permanecem funcionais.
-- Logos e alternância dos patrocinadores mantidos.
